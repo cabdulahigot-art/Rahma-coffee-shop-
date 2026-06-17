@@ -1,0 +1,6 @@
+{
+  "name": "Rahma Coffee Shop",
+  "description": "Premium handcrafted specialty coffee shop online ordering experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

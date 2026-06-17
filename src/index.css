@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Hanken Grotesk", sans-serif;
+
+  --color-primary: #8e4e00;
+  --color-primary-container: #ff9000;
+  --color-on-primary: #ffffff;
+  --color-background: #fcf9f8;
+  --color-on-surface: #1c1b1b;
+  --color-on-surface-variant: #564334;
+  --color-outline-variant: #dcc2ae;
+  --color-burgundy: #660000;
+  --color-surface-container: #f0eded;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container-high: #eae7e7;
+  --color-secondary: #aa3527;
+  --color-secondary-container: #fe725f;
+  
+  --spacing-container-max: 1280px;
+  --spacing-stack-lg: 32px;
+  --spacing-margin-desktop: 40px;
+  --spacing-unit: 8px;
+  --spacing-stack-md: 16px;
+  --spacing-margin-mobile: 16px;
+  --spacing-gutter: 24px;
+  --spacing-stack-sm: 8px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 25s linear infinite;
+}
+
+.text-burgundy {
+  color: #660000;
+}
+
+.aroma-bar-bg {
+  background-color: #EEEEEE;
+}
+
+.hero-gradient {
+  background: linear-gradient(to right, rgba(252, 249, 248, 0.95) 30%, rgba(252, 249, 248, 0.5) 75%, rgba(252, 249, 248, 0.1) 100%);
+}
+
+@media (max-width: 768px) {
+  .hero-gradient {
+    background: linear-gradient(to top, rgba(252, 249, 248, 1) 25%, rgba(252, 249, 248, 0.6) 100%);
+  }
+}
+
+/* Base custom classes to match responsive designs from template */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
